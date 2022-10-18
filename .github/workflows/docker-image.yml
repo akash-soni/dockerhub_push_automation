@@ -17,4 +17,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag aakashsoni/dockerhub-push-automation
     - name: Push the Docker image
-      run: docker login -u aakashsoni -p${{ secrets.DOCKER_TOKEN }} && docker push aakashsoni/dockerhub-push-automation:latest
+      run: docker login -u aakashsoni -p ${{ secrets.DOCKER_TOKEN }} && docker push aakashsoni/dockerhub-push-automation:latest
